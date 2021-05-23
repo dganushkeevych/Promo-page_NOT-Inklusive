@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat&family=Poppins&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    background: rgba(0, 0, 0, 0.6) !important;
+    padding: 20px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+    padding-left: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #1ebba3;
+}
+
+.heading-content{
+    position: absolute;
+    top: 35% !important;
+    width: 100%;
+    max-width: 100%;
+}
+
+.heading-content h5{
+    font-size: 3em;
+    font-weight: 300;
+    color: #000;
+    font-family: monospace;
+}
+
+.heading-content h1{
+    font-size: 4em;
+    font-weight: bolder;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-content p{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #000;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+/*--------------------About start--------------*/
+
+#about .btn{
+    border: 2px solid transparent;
+    width: 40%;
+    padding: 15px 22px;
+    background: #000;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#about .btn a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about .btn:hover{
+    border: 2px solid #1ebba3;
+    cursor: pointer;
+}
+
+/*--------------------Service start--------------*/
+
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url("/images/happiness.JPG");
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+  }
+  
+  .cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+  
+  .cover .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 19vmin;
+  }
+  
+  .cover .content > h1 {
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+  }
+  
+  .cover .content > p {
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: #e5e5e5;
+  }
+  
+  .numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+  }
+  
+  .numbers {
+    margin-top: -15vmin;
+  }
+  
+  .numbers .rect h1 {
+    font-size: 5rem;
+    color: tomato;
+  }
+  
+  .numbers .rect > p {
+    font-family: var(--Patua);
+  }
+/*----------Animation Start------------*/
+
+div.box{
+    padding: 0;
+}
+
+.box{
+    position: relative;
+    perspective: 1000px;
+    transition: all 0.3s ease-in-out 0.3s;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 2px 10px 5px solid #000;
+}
+
+.box .box-img{
+    transform: rotateY(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.box:hover .box-img{
+    transform: rotateY(-90deg);
+}
+
+
+.box .box-img img{
+    width: 250px;
+    height: 380px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.box .box-content{
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    transform: rotateY(90deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.box:hover .box-content{
+    transform: rotateY(0);
+}
+
+.box .box-content p{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+    margin: 0 25px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*----------Newsletter Start------------*/
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f8fafb;
+}
+
+.sec1 h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+.sec1 p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+#btn {
+    background: grey;
+    height: 1.3em;
+    min-width: 5.5em;
+    border: none;
+    border-radius: 10px;
+    color: #618d86;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  #btn:hover {
+    background: transparent;
+  }
+
+/*----------=--- Media Query---------------*/
+@media screen and (max-width: 767px){
+/*---------------tablets---------------------*/
+    .navbar{
+        letter-spacing: 0.1em;
+        padding: 10px 0;
+    }
+
+    .heading-content h5{
+        font-size: 2em;
+    }
+    
+    .heading-content h1{
+        font-size: 2em;
+    }
+    
+    .heading-content p{
+        font-size: 0.9em;
+    }
+
+    .heading-content{
+        position: absolute;
+        top: 20% !important;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #contact .post-heading{
+        font-size: 2em;
+    }
+
+    .box{
+        margin-top: 1.6em !important;
+    }
+    
+
+}
+
+@media screen and (max-width: 479px){
+    /*---------------smartphones---------------------*/
+    .navbar{
+        letter-spacing: 0.1em;
+        padding: 7px 0;
+    }
+
+    .heading-content h5{
+        font-size: 1em;
+    }
+    
+    .heading-content h1{
+        font-size: 1em;
+    }
+    
+    .heading-content p{
+        font-size: 0.7em;
+    }
+
+    .heading-content{
+        position: absolute;
+        top: 12% !important;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .box{
+        margin-top: 1.6em !important;
+    }
+    
+}
+
+
+
